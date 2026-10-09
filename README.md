@@ -59,7 +59,8 @@ npm run worker      # render worker (needs Redis)
 Railway, in the `@bywilliaml` workspace. Two services off this repo: the
 web app (`Dockerfile`) and the render worker (`Dockerfile.worker`).
 Migrations run with `npx prisma migrate deploy`. The app is served at
-`viral.bywilliaml.com`.
+`viral.shifulab.com` (the old `viral.bywilliaml.com` still points at the
+same service).
 
 ## Design
 

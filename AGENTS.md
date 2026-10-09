@@ -220,7 +220,8 @@ and member stats. If tracking data decays, those pages go quiet.
 Six pages render unauthenticated — that's the branded surface:
 
 ```
-/welcome          the landing page (has its own welcome.css)
+/welcome          the landing page (has its own welcome.css, and a
+                  three.js scene in components/welcome/scene/)
 /welcome/request
 /auth/signin
 /auth/error
@@ -236,8 +237,9 @@ Plus four intentionally public API routes: `access-request`, `setup`,
 
 ## Deploy
 
-Railway, in the `@bywilliaml` workspace, served at
-`viral.bywilliaml.com`. Three services off this repo:
+Railway, in the `@bywilliaml` workspace (project "Linkedin Infographic"),
+served at `viral.shifulab.com`. The old `viral.bywilliaml.com` is still
+attached to the same service. Three services off this repo:
 
 | Service | Dockerfile | Config |
 |---|---|---|
@@ -247,9 +249,9 @@ Railway, in the `@bywilliaml` workspace, served at
 
 Migrations run with `npx prisma migrate deploy`.
 
-Note the repo was renamed to `viral-LinkedIn`; older clones may still
-have the previous remote URL. GitHub redirects, so pushes work either
-way.
+The repo lives at `shifulaboratories/viral-linkedin`; older clones may
+still have a previous remote URL. GitHub redirects, so pushes work
+either way.
 
 ---
 
